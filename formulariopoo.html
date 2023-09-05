@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="cuerpo">
+    <form name="form1" method="post" action="" id="miformulario">
+        <table width="25%" border="1" id="mitabla">
+            <tr>
+                <td>Nombre:</td>
+                <td><label for="textfield"></label>
+                <input type="text" name="textfield" id="textfield"</td>
+</tr>
+<tr>
+    <td>Apellidos:</td>
+    
+    <td><input type="text" name="textfield2" id="textfield2"</td>
+</tr>
+<td>Edad:</td>
+    
+<td><input type="text" name="textfield3" id="textfield3"</td>
+</tr>
+<td>Carnet:</td>
+    
+<td><input type="text" name="textfield4" id="textfield4"</td>
+</tr>
+<tr>
+    <td><input type="submit" name="button" id="button" value="Enviar"></td>
+    <td><input type="reset" name="button2" id="button2" value="Restablecer"></td>
+</tr>
+        </table>
+    </form>
+    <script>
+        //creamos una variable donde almacenamos el body de la pag
+        var cuerpo=document.getElementById("cuerpo");
+        //preguntamos al usuario el color a elegir. ponemos el metodo toLowerCase. para convertir todos los caracteres en miniscula
+        var colorWeb=prompt("Introduce el color de fondo. Azul/Verde/Rojo").toLowerCase();
+        if(colorWeb=="azul"){
+            cuerpo.style.background="blue";
+        }
+        else if(colorWeb=="rojo"){
+            cuerpo.style.background="red";
+        }
+        else if(colorWeb=="verde"){
+            cuerpo.style.background="green";
+        }
+        else{
+            alert("Este color no se puede elegir");
+        }
+
+
+    </script>
+    
+</body>
+</html>

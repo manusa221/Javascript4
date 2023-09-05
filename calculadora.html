@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+    //vamos hacer una calculadora que pueda operar con dos numeros
+    var num1=prompt("Introduce el primer número:");
+    var num2=prompt("Introduce el primer número:");
+    //si el usuario introduce texto no se pude realizar la operacion y para que no salga un error utilizamos el siguiente metodo
+    //verifica si no es un número, entonces debemos poner el signo ! para que nos diga lo contrario
+    //este if es anidado y recogera todo hasta el final de las operaciones
+    if(!isNaN(num1) && !isNaN(num2)){
+
+    var operacion=prompt("¿Qué operación deseas ralizar? suma/resta/multiplicación/división");
+
+    if(operacion=="suma"){
+     //el primer alert no lo sumara porque al preguntar al usuario los numeros que introduzcas los considera string. Enonces lo va a concatenar
+        //alert(num1+num2);
+    //Hay que añadir el metodo parseInt para convertir un string a entero
+    alert(parseInt(num1)+parseInt(num2));
+    }
+    else if(operacion=="resta"){
+        alert(parseInt(num1)-parseInt(num2));
+    }
+       else  if(operacion=="multiplicación"){
+            alert(parseInt(num1)*parseInt(num2));
+       }
+
+           else if(operacion=="división") {
+                alert(parseInt(num1)/parseInt(num2));
+  
+            }
+            else{
+                alert("opración no completada");
+            }
+        }
+        else{
+            alert("No se pueden operar los números");
+        }
+
+    
+      
+     
+  
+    
+</script>
+
+
+
+</head>
+<body>
+    
+</body>
+</html>

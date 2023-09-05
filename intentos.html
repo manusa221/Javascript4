@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <body>
+    <table width="25%" border="0">
+        <tr>
+            <td><label for="textfield"> </label>
+            <input type="text" name="textfield" id="c_mensaje"></td>
+            <td><label for="textfield2"> </label>
+                <input type="text" name="textfield2" id="c_intentos"></td>
+        </tr>
+
+    </table>
+
+    <script>
+        //creo un numero aleatorio entre 0 y 100 y que lo redondee a entero
+        var aleatorio=Math.round(Math.random()*100);
+        var minum=0;
+        var intentos =0;
+
+        do{
+            //creo un do, para preguntar el numero por consola
+            minum=prompt("Introduce un nº entre 0 y 100");
+            //aqui me dice que si el núm es mas alto
+            if(aleatorio>minum){
+                //alert ("Más alto ");
+                document.write("Más alto");
+            }
+            if(aleatorio<minum){
+               // alert("Más bajo");
+               document.write("Más bajo" + "<br/>");
+            }
+            intentos++;
+
+        }while(aleatorio!=minum);//mientras el num aleatorio sea diferente a mi num repetira el bucle do
+        //alert("correcto. Has consumido " + intentos + "intentos");
+       document.write ("correcto. Has consumido " + intentos + " intentos");
+    </script>
+
+</body>
+</html>

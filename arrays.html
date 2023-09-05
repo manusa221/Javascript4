@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Usando Arrays</title>
+<link rel="stylesheet" href="css/micss.css">
+<script>
+// creamos arrays
+var articulos= ["zapatillas","Camiseta","Pantalón","Calcetines"];
+	
+</script>
+</head>
+
+<body>
+<div class="contenedor">
+  <div class="header">
+    <p class="logo">JavaScript Arrays <i class="mm">Píldoras Informáticas
+     </p>
+  </div>
+  <div class="contenido">
+    <div class="principal">
+      <h1>Manejando Arrays</h1>
+      <script>
+	  //vamos a escribir lo que hay en la 1º posicion del array
+    document.write ("<p> El primer articulo es <strong>" );
+    document.write (articulos[0] + "</strong> </p>");
+//cuantos articulos hay en el array
+   // alert(articulos.length);
+   //acceder al último elemnto del array
+   document.write("<p> El último articulo del array es: <strong>");
+   // document.write(articulos[3] + "</strong></p>");
+    document.write(articulos[articulos.length-1] + "</strong></p>");
+    //añadir un 5 elemnto al comienzo del array
+    articulos.unshift("Balón");
+    document.write("<p> Casi nos olvidamos!!! Agregamos este elemento <strong>");
+    document.write(articulos[0] + "</strong></p>");
+    //vamos agregar un elemento al final
+    /*articulos.push("Raqueta");
+    document.write("<p> Casi nos olvidamos!!! Agregamos este elemento <strong>");
+    document.write(articulos[articulos.length-1] + "</strong></p>");*/
+		
+		//para introducir un articulo por pantalla
+    articulos.push(prompt("Introduce un articulo:"));
+    document.write("<p> Casi nos olvidamos!!! Agregamos este elemento <strong>");
+    document.write(articulos[articulos.length-1] + "</strong></p>");
+   
+	  </script>
+     </div>
+  </div>
+  
+</div>
+</body>
+</html>
